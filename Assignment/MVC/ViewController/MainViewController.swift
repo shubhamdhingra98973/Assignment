@@ -10,7 +10,6 @@ import Foundation
 
 class MainViewController : UIViewController {
 
-    
     @IBOutlet weak var tableView : UITableView?
     
     var itemsArr : [Item]?

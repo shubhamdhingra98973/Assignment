@@ -46,6 +46,7 @@ extension TableViewDataSource : UITableViewDelegate , UITableViewDataSource, UIS
         guard let identifier = cellIdentifier else{
             fatalError("Cell identifier not provided")
         }
+        
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: identifier , for: indexPath) as UITableViewCell
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         if let block = self.configureCellBlock , let item: Any = self.items?[indexPath.row]{
